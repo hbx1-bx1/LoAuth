@@ -36,7 +36,7 @@ Your secrets never leave your machine — encrypted at rest with military-grade 
 &nbsp;
 <img src="https://img.shields.io/badge/Status-Stable-00D4AA?style=flat-square" alt="Stable" />
 &nbsp;
-<a href="https://t.me/VURA_Official"><img src="https://img.shields.io/badge/Telegram-VURA__Official-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram" /></a>
+<a href="https://t.me/LoAuth_Official"><img src="https://img.shields.io/badge/Telegram-LoAuth__Official-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram" /></a>
 
 <br/><br/>
 
@@ -85,8 +85,8 @@ Every secret key is encrypted locally with **AES-256-GCM**. The encryption key i
 ### Quick Install (Recommended)
 
 ```bash
-git clone https://github.com/bx1-official/LoAuth.git
-cd LoAuth
+git clone https://github.com/hbx1-bx1/loauth.git
+cd loauth
 chmod +x install.sh
 bash install.sh
 ```
@@ -273,8 +273,8 @@ Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for details.
 
 <div align="center">
 
-<a href="https://t.me/VURA_Official">
-  <img src="https://img.shields.io/badge/Telegram-Join%20VURA__Official-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
+<a href="https://t.me/LoAuth_Official">
+  <img src="https://img.shields.io/badge/Telegram-Join%20LoAuth__Official-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
 </a>
 
 <br/><br/>
