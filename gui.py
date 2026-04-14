@@ -131,8 +131,8 @@ def start_gui():
             pw_field.on_submit = on_submit
             confirm_field.on_submit = on_submit
 
-            submit_btn = ft.ElevatedButton(
-                text="Create Vault" if is_new else "Unlock",
+            submit_btn = ft.Button(
+                content="Create Vault" if is_new else "Unlock",
                 bgcolor=Colors.PRIMARY,
                 color=Colors.BG,
                 width=320,
@@ -221,7 +221,7 @@ def start_gui():
                     ring,
                     ft.Container(
                         content=timer_label,
-                        alignment=ft.alignment.center,
+                        alignment=ft.Alignment(0, 0),
                         width=38,
                         height=38,
                     ),
@@ -308,9 +308,9 @@ def start_gui():
                     spacing=0,
                 ),
                 bgcolor=Colors.CARD_BG,
-                border=ft.border.all(1, Colors.CARD_BORDER),
+                border=ft.Border.all(1, Colors.CARD_BORDER),
                 border_radius=14,
-                padding=ft.padding.only(left=18, right=10, top=14, bottom=6),
+                padding=ft.Padding.only(left=18, right=10, top=14, bottom=6),
                 animate=ft.Animation(300, ft.AnimationCurve.EASE_OUT),
                 ink=True,
                 on_click=on_copy,
@@ -352,8 +352,8 @@ def start_gui():
                             horizontal_alignment=ft.CrossAxisAlignment.CENTER,
                             spacing=8,
                         ),
-                        alignment=ft.alignment.center,
-                        padding=ft.padding.only(top=80),
+                        alignment=ft.Alignment(0, 0),
+                        padding=ft.Padding.only(top=80),
                     )
                 )
             else:
@@ -421,8 +421,8 @@ def start_gui():
                                     bgcolor=Colors.TEXT_DIM,
                                     border_radius=2,
                                 ),
-                                alignment=ft.alignment.center,
-                                padding=ft.padding.only(top=12, bottom=8),
+                                alignment=ft.Alignment(0, 0),
+                                padding=ft.Padding.only(top=12, bottom=8),
                             ),
                             ft.Text(
                                 "Add Account",
@@ -436,8 +436,8 @@ def start_gui():
                             secret_f,
                             err,
                             ft.Container(height=4),
-                            ft.ElevatedButton(
-                                "Save",
+                            ft.Button(
+                                content="Save",
                                 bgcolor=Colors.PRIMARY,
                                 color=Colors.BG,
                                 width=400,
@@ -451,8 +451,8 @@ def start_gui():
                         spacing=8,
                     ),
                     bgcolor=Colors.SURFACE,
-                    border_radius=ft.border_radius.only(top_left=20, top_right=20),
-                    padding=ft.padding.symmetric(horizontal=24, vertical=0),
+                    border_radius=ft.BorderRadius.only(top_left=20, top_right=20),
+                    padding=ft.Padding.symmetric(horizontal=24, vertical=0),
                 ),
                 bgcolor="#00000000",
             )
@@ -509,7 +509,7 @@ def start_gui():
                     alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
                 ),
                 bgcolor=Colors.SURFACE,
-                padding=ft.padding.symmetric(horizontal=18, vertical=10),
+                padding=ft.Padding.symmetric(horizontal=18, vertical=10),
             )
 
             search_bar = ft.Container(
@@ -523,10 +523,10 @@ def start_gui():
                     cursor_color=Colors.PRIMARY,
                     prefix_icon=ft.Icons.SEARCH_ROUNDED,
                     border_radius=12,
-                    content_padding=ft.padding.symmetric(horizontal=12, vertical=8),
+                    content_padding=ft.Padding.symmetric(horizontal=12, vertical=8),
                     on_change=on_search_change,
                 ),
-                padding=ft.padding.symmetric(horizontal=18, vertical=6),
+                padding=ft.Padding.symmetric(horizontal=18, vertical=6),
             )
 
             version_label = ft.Container(
@@ -536,8 +536,8 @@ def start_gui():
                     color=Colors.TEXT_DIM,
                     text_align=ft.TextAlign.CENTER,
                 ),
-                alignment=ft.alignment.center,
-                padding=ft.padding.only(bottom=10, top=4),
+                alignment=ft.Alignment(0, 0),
+                padding=ft.Padding.only(bottom=10, top=4),
             )
 
             page.add(
@@ -549,7 +549,7 @@ def start_gui():
                             ft.Container(
                                 content=accounts_column,
                                 expand=True,
-                                padding=ft.padding.symmetric(horizontal=14),
+                                padding=ft.Padding.symmetric(horizontal=14),
                             ),
                             version_label,
                         ],
@@ -594,7 +594,7 @@ def start_gui():
         # ── Start ─────────────────────────────────────────────────
         build_auth_screen()
 
-    ft.app(target=app)
+    ft.run(app)
 
 
 # Allow running directly: python gui.py
