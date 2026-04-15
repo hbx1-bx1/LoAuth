@@ -294,8 +294,6 @@ Join the official Telegram channel for discussions and updates.
 
 <br/><br/>
 
-<img src="https://img.shields.io/badge/made%20with-%E2%9D%A4%EF%B8%8F-red?style=flat-square" />
-&nbsp;
-<img src="https://img.shields.io/badge/by-bx1-00D4AA?style=flat-square" />
+<img src="https://img.shields.io/badge/made%20by-layth-00D4AA?style=flat-square" />
 
 </div>
